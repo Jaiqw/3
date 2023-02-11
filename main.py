@@ -138,7 +138,7 @@ def tui():
 
 
 print(logo)
-channel, post = input(' [ INPUT ] Enter Post URL: ').replace('https://t.me/', '').split('/')
+channel, post = ('jassimjabbar/6').replace('https://t.me/', '').split('/')
 
 try:
     search('<span class="tgme_widget_message_views">([^<]+)', requests.get(f'https://t.me/{channel}/{post}',
